@@ -1,6 +1,15 @@
 # BURGERANIME
 The new version of the anime burger site 🍔
 ![image](https://github.com/amadich/BURGERANIME/assets/74735976/107bcc6d-7b8a-481a-b20a-649c1915215f)
+
+# New Register Page  ( Strong protection unlike php)
+
+![image](https://github.com/amadich/BURGERANIME/assets/74735976/5a9e09ce-e46d-40f7-8a79-7dd0fa7c344f)
+
+# Login ( Responsive )
+![image](https://github.com/amadich/BURGERANIME/assets/74735976/a396a554-60ec-475d-a616-38b92bc78855)
+
+
 # Console For Users (Admins)
 ![image](https://github.com/amadich/BURGERANIME/assets/74735976/843a0b0b-064a-4ee5-b8de-a71266aa0ce3)
 
