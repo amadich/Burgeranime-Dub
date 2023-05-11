@@ -11,9 +11,10 @@ The new version of the anime burger site 🍔
 ![image](https://github.com/amadich/BURGERANIME/assets/74735976/57f2acca-de0e-48f9-b9a7-8dda74319722)
 
 # Routing Page (Series) 
-![image](https://github.com/amadich/BURGERANIME/assets/74735976/277492f0-c222-409d-876b-b299bd8a7d69)
+![image](https://github.com/amadich/BURGERANIME/assets/74735976/6157352b-25ae-41ee-baa4-53160ac9b32b)
+
 
 ```cmd
 Like :  https://localhost/series/645bb24bba59f64ad52f5205
- Routes With ID SERIES (" 645bb24bba59f64ad52f5205")
+ Routes With ID SERIES (" 645bb24bba59f64ad52f5205 ")
 ```
