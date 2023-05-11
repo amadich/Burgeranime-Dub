@@ -28,3 +28,9 @@ The new version of the anime burger site 🍔
 Like :  https://localhost/series/645bb24bba59f64ad52f5205
  Routes With ID SERIES (" 645bb24bba59f64ad52f5205 ")
 ```
+
+
+###
+The site is still under development, it still needs a lot of additions, such as adding episodes, fixing a profile page, and good additions such as adding a favorites list, manga, and much more, unlike the php version
+
+All site rights reserved at: Copyright © 2023 github/amadich . All of our reserves. Burgeranime Pages
