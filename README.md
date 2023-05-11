@@ -12,6 +12,7 @@ The new version of the anime burger site 🍔
 
 # Routing Page (Series) 
 ![image](https://github.com/amadich/BURGERANIME/assets/74735976/6157352b-25ae-41ee-baa4-53160ac9b32b)
+![image](https://github.com/amadich/BURGERANIME/assets/74735976/1af7fb42-899f-4989-9154-79dc2ebf8466)
 
 
 ```cmd
