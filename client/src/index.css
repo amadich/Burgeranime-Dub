@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  background: none;
+  
+}
+
+article {
+  position: relative;
+  max-width: 1366px;
+  margin: auto;
+}
