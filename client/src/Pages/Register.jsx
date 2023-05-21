@@ -19,8 +19,12 @@ function Rejester() {
          
          if (res.data.ok != 0) {
             setCookie("acc_tokens",res.data.token);
-            window.localStorage.setItem("name",res.data.name);
-            window.localStorage.setItem("email",res.data.email);
+            
+            window.localStorage.setItem("User",JSON.stringify(res.data.User));
+
+            window.localStorage.setItem("name",res.data.User.name);
+            window.localStorage.setItem("email",res.data.User.email);
+            
             window.localStorage.setItem("token",res.data.token);
             console.log(res.data);
 

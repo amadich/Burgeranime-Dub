@@ -76,7 +76,7 @@ function Header() {
                            </Link>
                         </li>
                         {
-                           storedUser.ranks.admin == 1 ? <li className='bg-blue-500/70 hover:bg-blue-500/100 text-black rounded-lg'><Link to="/Profile/Console">Console Admin</Link></li> : null
+                           cookie.acc_tokens ? storedUser.ranks.admin == 1 ? <li className='bg-blue-500/70 hover:bg-blue-500/100 text-black rounded-lg'><Link to="/Profile/Console">Console Admin</Link></li> : null : null
                         }
                         <li><a>Settings</a></li>
                         <li onClick={removeStorageCookie}><a>Logout</a></li>
