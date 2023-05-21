@@ -3,6 +3,7 @@ import LOGO from '../../public/burgeranime.png'
 import { useState } from 'react';
 import { useCookies } from 'react-cookie';
 import Axios from 'axios';
+
 function Login() {
    
 
@@ -20,11 +21,14 @@ function Login() {
             // Exclude "pwd" property from User object
             const { pwd, ...userWithoutPwd } = res.data.User;
             setCookie("acc_tokens",res.data.token);
-            window.localStorage.setItem("User", JSON.stringify(userWithoutPwd));
             window.localStorage.setItem("token",res.data.token);
+            /*
+            window.localStorage.setItem("User", JSON.stringify(userWithoutPwd));
+            
             window.localStorage.setItem("name",res.data.User.name);
             window.localStorage.setItem("email",res.data.User.email);
             window.localStorage.setItem("userID",res.data.User._id);
+            */
 
                   window.location.href = "/";
                   console.log(res.data);
@@ -46,7 +50,7 @@ function Login() {
    return ( 
       <>
   
-               <div className="hero min-h-screen bg-base-200">
+               <div className="hero min-h-screen bg-base-200 mt-10 absolute">
                   <div className="hero-content flex-col ">
                      <div className="text-center lg:text-left ">
                         <Link to="/" ><h1 className="text-5xl font-bold "><img src={LOGO} alt="Burger Anime" width={100} className='ml-auto' /></h1> </Link>

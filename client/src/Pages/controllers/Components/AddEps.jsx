@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Header from "../../../components/Header";
+
 import Axios from "axios";
 function AddEps() {
    const [myanime , setMyanime] = useState([]);
@@ -13,7 +13,7 @@ function AddEps() {
 
    return ( 
       <>
-            <Header />
+            
          
 
          <article className="mt-20 absolute w-full h-full text-center" >

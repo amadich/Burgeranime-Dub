@@ -1,14 +1,14 @@
 import { useCookies } from "react-cookie";
-import Header from "../components/Header";
+
 import Profile_setting from "../components/Profile_setting";
 import { Link } from "react-router-dom";
 
-function Profile() {
+function Profile({user}) {
    const [cookie,setCookie] = useCookies(["acc_tokens"]);
-   const storedUser = JSON.parse(window.localStorage.getItem("User"));
+   const storedUser = user ;//JSON.parse(window.localStorage.getItem("User"));
    return ( 
       <>
-            <Header />
+           
             
             <div className="flex justify-between">
 

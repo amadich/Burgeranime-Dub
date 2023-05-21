@@ -20,11 +20,12 @@ function Rejester() {
          if (res.data.ok != 0) {
             setCookie("acc_tokens",res.data.token);
             
+           /*
             window.localStorage.setItem("User",JSON.stringify(res.data.User));
 
             window.localStorage.setItem("name",res.data.User.name);
             window.localStorage.setItem("email",res.data.User.email);
-            
+            */
             window.localStorage.setItem("token",res.data.token);
             console.log(res.data);
 
@@ -41,7 +42,7 @@ function Rejester() {
    return ( 
       <>
   
-               <div className="hero min-h-screen bg-base-200">
+               <div className="hero min-h-screen bg-base-200 mt-16 absolute">
                   <div className="hero-content flex-col lg:flex-row-reverse">
                      <div className="text-center lg:text-left ">
                         <Link to="/" ><h1 className="text-5xl font-bold "><img src={LOGO} alt="Burger Anime" width={100} className='ml-auto' /></h1> </Link>

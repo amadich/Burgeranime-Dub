@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import Axios from "axios";
 import { useEffect, useState } from 'react';
-import Header from '../components/Header';
+
 
 const Series = () => {
   const { id } = useParams();
@@ -26,7 +26,7 @@ const Series = () => {
 
   return (
     <>
-      <Header />
+      
 
       <div className='flex justify-center'>
         <article className='mt-16 absolute w-full h-full block m-auto items-center'>

@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import Header from "../../../components/Header";
+
 import Axios from "axios";
 
 function Uploadanime() {
@@ -73,7 +73,7 @@ function Uploadanime() {
    return ( 
 
       <>
-      <Header />
+      
       
          <div className="flex justify-center">
                               <article className="mt-20 absolute w-full h-full text-center">

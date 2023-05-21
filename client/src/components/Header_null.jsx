@@ -1,24 +1,7 @@
 import { Link } from 'react-router-dom';
 import LOGO from '../../public/burgeranime.png';
-import Avatar from '../../public/assets/avatar.png';
-import {useCookies} from 'react-cookie';
-function Header({ user }) {
-   const [cookie,setCookie] = useCookies(['acc_tokens']);
-   const storedUser = user; //JSON.parse(window.localStorage.getItem("User"));
+function Header_null() {
    
-   const removeStorageCookie = () => {
-      
-      setCookie("acc_tokens" , "");
-      window.localStorage.removeItem("token");
-      /*
-      window.localStorage.removeItem("name");
-      window.localStorage.removeItem("email");
-      window.localStorage.removeItem("User");
-      window.localStorage.removeItem("userID");
-      */
-      window.location.href = '/login';
-      
-   }
    return ( 
       <header className='fixed w-full z-10'>
          <div className="navbar bg-base-100">
@@ -63,29 +46,10 @@ function Header({ user }) {
                   </ul>
                </div>
                <div className="navbar-end">
-                  <Link to='/Register' className="btn bg-yellow-500 text-slate-950 hover:bg-white pt-4" style={!cookie.acc_tokens ? {display: 'block'} : {display: "none"}} >Get started </Link>
-                  <span>{cookie.acc_tokens ? user.name : null }</span>
+                  <Link to='/Register' className="btn bg-yellow-500 text-slate-950 hover:bg-white " >Get started </Link>
                   
-                  <div className='dropdown dropdown-end'>
-                    
-                    
-                     <div tabIndex={0} className=' w-10 h-10  rounded-xl ml-5 bg-cover cursor-pointer hover:bg-[#10d8ff29]' style={!cookie.acc_tokens ? {display: "none"} :  window.localStorage.getItem("avatar") != "" ? {display: "block" , backgroundImage: `url(${Avatar})`} : {display: "block" , backgroundImage: `url(${Avatar})`} } ></div>
-
-                     <ul tabIndex={0} className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
-                        <li>
-                           <Link to="/Profile" className="justify-between">
-                              Profile
-                              <span className="badge">New</span>
-                           </Link>
-                        </li>
-                        {
-                           cookie.acc_tokens ? user.ranks.admin == 1 ? <li className='bg-blue-500/70 hover:bg-blue-500/100 text-black rounded-lg'><Link to="/Profile/Console">Console Admin</Link></li> : null : null
-                        }
-                        <li><a>Settings</a></li>
-                        <li onClick={removeStorageCookie}><a>Logout</a></li>
-                     </ul>
-
-                  </div>
+                  
+                  
 
                </div>
             </div>
@@ -93,4 +57,4 @@ function Header({ user }) {
     );
 }
 
-export default Header;
+export default Header_null;

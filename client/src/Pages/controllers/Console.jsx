@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import Header from "../../components/Header";
+
 
 function Console() {
    return ( 
       
       <>
-               <Header />
+              
          <div className="flex justify-center">
                      <article className="absolute mt-20 w-full ">
                               <h1 className="text-center text-xl font-mono">Console Admin</h1>

@@ -6,7 +6,7 @@ import Hero_main from "../components/Hero_main";
 function Main() {
    return ( 
       <>
-         <Header />
+         
          <Hero_main />
          <Article />
          <Footer />
