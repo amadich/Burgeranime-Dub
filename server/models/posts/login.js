@@ -12,7 +12,12 @@ const Login = (app) => {
          const checkpwd = await bcrypt.compare(pwd,User.pwd);
          !checkpwd && res.json({message: "Email Or Password Incorrect",ok:4});
 
-         token = jwt.sign({userID : User._id},"shhh");
+         token = jwt.sign({User,ok:1},"shhh");
+
+         const decoded = jwt.verify(token, "shhh");
+         // 'decoded' now contains the decoded payload of the JWT token
+         console.log(decoded);
+
          res.json({token,User,ok:1});
       } catch (error) {
          console.log("Error in Signin Post",error);

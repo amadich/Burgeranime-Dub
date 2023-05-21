@@ -15,8 +15,19 @@ const Register = (app) => {
             const Account = new UserModel({name,email,pwd:hashpwd,ranks: {vip: 0 , admin : 0 , demo : 1}});
             await Account.save();
 
-            const token = jwt.sign({email},"shhh");
-            res.json({token,name,email,ok:1});
+            
+
+            const User = {
+               
+               email : email,
+               name : name,
+               ranks: {vip: 0 , admin : 0 , demo : 1}
+               
+            };
+
+            const token = jwt.sign({User,ok:1},"shhh");
+
+            res.json({token,User,ok:1});
          }
 
       } catch (error) {
