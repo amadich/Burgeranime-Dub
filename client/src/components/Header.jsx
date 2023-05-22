@@ -21,13 +21,13 @@ function Header({ user }) {
    }
    return ( 
       <header className='fixed w-full z-10'>
-         <div className="navbar bg-base-100">
+         <div className="navbar bg-base-100 bg-[#46393969]">
                <div className="navbar-start">
-                  <div className="dropdown">
+                  <div className="dropdown ">
                      <label tabIndex={0} className="btn btn-ghost lg:hidden">
                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                      </label>
-                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#222] rounded-box w-52">
                      <li><a>Animes</a></li>
                      <li tabIndex={0}>
                         <a className="justify-between">
@@ -66,12 +66,12 @@ function Header({ user }) {
                   <Link to='/Register' className="btn bg-yellow-500 text-slate-950 hover:bg-white pt-4" style={!cookie.acc_tokens ? {display: 'block'} : {display: "none"}} >Get started </Link>
                   <span>{cookie.acc_tokens ? user.name : null }</span>
                   
-                  <div className='dropdown dropdown-end'>
+                  <div className='dropdown dropdown-end '>
                     
                     
                      <div tabIndex={0} className=' w-10 h-10  rounded-xl ml-5 bg-cover cursor-pointer hover:bg-[#10d8ff29]' style={!cookie.acc_tokens ? {display: "none"} :  window.localStorage.getItem("avatar") != "" ? {display: "block" , backgroundImage: `url(${Avatar})`} : {display: "block" , backgroundImage: `url(${Avatar})`} } ></div>
 
-                     <ul tabIndex={0} className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                     <ul tabIndex={0} className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-[#46393969] rounded-box w-52">
                         <li>
                            <Link to="/Profile" className="justify-between">
                               Profile

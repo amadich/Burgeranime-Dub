@@ -103,17 +103,17 @@ function Uploadanime() {
 
 
                               <div className="inline-grid ">
-                                    <input className="input text-center" type="text" placeholder="Anime Title" required onChange={(e) => {setTitle(e.target.value)}}/>
-                                    <textarea className="textarea mt-5" placeholder="anime Discription" required onChange={(e) => {setDisc(e.target.value)}}></textarea>
+                                    <input className="input text-center bg-[#333]" type="text" placeholder="Anime Title" required onChange={(e) => {setTitle(e.target.value)}}/>
+                                    <textarea className="textarea mt-5 bg-[#333]" placeholder="anime Discription" required onChange={(e) => {setDisc(e.target.value)}}></textarea>
 
                                     <div className="flex">
                                           <label>
                                           <span className="p-5">Anime Image Origine : </span>
-                                          <input type="file" className="file-input file-input-bordered file-input-success w-full max-w-xs mt-5" onChange={handleFile1InputChange} required/>
+                                          <input type="file" className="file-input file-input-bordered file-input-success w-full max-w-xs mt-5 bg-[#333]" onChange={handleFile1InputChange} required/>
                                           </label>
                                           <label>
                                           <span className="p-5">Anime Background Image Origine : </span>
-                                          <input type="file" className="file-input file-input-bordered file-input-success w-full max-w-xs mt-5" onChange={handleFile2InputChange} required/>
+                                          <input type="file" className="file-input file-input-bordered file-input-success w-full max-w-xs mt-5 bg-[#333]" onChange={handleFile2InputChange} required/>
                                           </label>
                                     </div>
 

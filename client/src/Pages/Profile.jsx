@@ -10,14 +10,14 @@ function Profile({user}) {
       <>
            
             
-            <div className="flex justify-between">
+            <div className="flex justify-between bg-[#46393969]">
 
-            <div className="drawer drawer-mobile mt-16 inline-flex">
+            <div className="drawer drawer-mobile mt-16 inline-flex ">
                   <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
                   
-                  <div className="drawer-side">
+                  <div className="drawer-side ">
                      <label htmlFor="my-drawer-2" className="drawer-overlay"></label> 
-                     <ul className="menu p-4 w-80 bg-base-100 text-base-content">
+                     <ul className="menu p-4 w-80  text-gray-100  bg-[#454]">
             
                         <li><a>Profile Setting</a></li>
                         <li><a>Change Information</a></li>

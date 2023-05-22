@@ -42,13 +42,13 @@ function Rejester() {
    return ( 
       <>
   
-               <div className="hero min-h-screen bg-base-200 mt-16 absolute">
+               <div className="hero min-h-screen  mt-16 absolute">
                   <div className="hero-content flex-col lg:flex-row-reverse">
                      <div className="text-center lg:text-left ">
                         <Link to="/" ><h1 className="text-5xl font-bold "><img src={LOGO} alt="Burger Anime" width={100} className='ml-auto' /></h1> </Link>
                         
                      </div>
-                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-[#343136ab]">
                         <img src={Registeryuzu} alt="" width={100} className='ml-[80%] mt-[-8%]' />
                         <div className="card-body">
                            <form onSubmit={handsubmit}>
@@ -56,19 +56,19 @@ function Rejester() {
                                        <label className="label">
                                           <span className="label-text">Username <i className='text-xs text-yellow-500'> ( Your Public Name in Burger Anime )</i></span>
                                        </label>
-                                       <input type="text" required placeholder="Name" className="input input-bordered" onChange={(e) => {setName(e.target.value)}} />
+                                       <input type="text" required placeholder="Name" className="input input-bordered bg-[#000000ab]" onChange={(e) => {setName(e.target.value)}} />
                                     </div>
                                  <div className="form-control">
                                        <label className="label">
                                           <span className="label-text">Email</span>
                                        </label>
-                                       <input type="text" required placeholder="email" className="input input-bordered" onChange={(e) => {setEmail(e.target.value)}} />
+                                       <input type="text" required placeholder="email" className="input input-bordered bg-[#000000ab]" onChange={(e) => {setEmail(e.target.value)}} />
                                     </div>
                                     <div className="form-control">
                                        <label className="label">
                                           <span className="label-text">Password</span>
                                        </label>
-                                       <input type="password" required placeholder="password" className="input input-bordered" onChange={(e) => {setPwd(e.target.value)}} />
+                                       <input type="password" required placeholder="password" className="input input-bordered bg-[#000000ab]" onChange={(e) => {setPwd(e.target.value)}} />
                                        <label className="label">
                                           <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                        </label>

@@ -50,7 +50,7 @@ function Login() {
    return ( 
       <>
   
-               <div className="hero min-h-screen bg-base-200 mt-10 absolute">
+               <div className="hero min-h-screen  mt-10 absolute">
                   <div className="hero-content flex-col ">
                      <div className="text-center lg:text-left ">
                         <Link to="/" ><h1 className="text-5xl font-bold "><img src={LOGO} alt="Burger Anime" width={100} className='ml-auto' /></h1> </Link>
@@ -61,17 +61,17 @@ function Login() {
                                    
                                  <div className="form-control">
                                        <label className="label">
-                                          <span className="label-text">Email</span>
+                                          <span className="">Email</span>
                                        </label>
-                                       <input type="text" required placeholder="email" className="input input-bordered" onChange={(e) => {setEmail(e.target.value)}} />
+                                       <input type="text" required placeholder="email" className="input input-bordered bg-[#000000ab]" onChange={(e) => {setEmail(e.target.value)}} />
                                     </div>
                                     <div className="form-control">
                                        <label className="label">
-                                          <span className="label-text">Password</span>
+                                          <span className="">Password</span>
                                        </label>
-                                       <input type="password" required placeholder="password" className="input input-bordered" onChange={(e) => {setPwd(e.target.value)}} />
+                                       <input type="password" required placeholder="password" className="input input-bordered bg-[#000000ab]" onChange={(e) => {setPwd(e.target.value)}} />
                                        <label className="label">
-                                          <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                                          <a href="#" className=" link link-hover text-xs">Forgot password?</a>
                                        </label>
                                     </div>
                                     <div className="form-control mt-6">
