@@ -16,6 +16,8 @@ The new version of the anime burger site 🍔 , The site gets a new software pow
 
 # Upload ANIME PAGE (Admin CONSOLE)
 ![image](https://github.com/amadich/BURGERANIME/assets/74735976/8c7175e3-8237-4f06-8e4f-5fe11433eb01)
+# ADD EPISODES PAGE (Admin CONSOLE)
+![image](https://github.com/amadich/BURGERANIME/assets/74735976/5be098aa-3caf-4b6e-8192-2ed2d439050c)
 
 # Profile User (Under dev )
 ![image](https://github.com/amadich/BURGERANIME/assets/74735976/57f2acca-de0e-48f9-b9a7-8dda74319722)
