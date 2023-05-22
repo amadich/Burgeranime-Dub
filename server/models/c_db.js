@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
-const url_db = process.env.MONGO_NET;
+const url_db = `mongodb+srv://amadich:Sxzv1bcL4ZqWkkTh@myburger.ak3ck8o.mongodb.net/burger`;
+const url_db_local = `mongodb://127.0.0.1:27017/burger`;
 // Connect to MongoDB
-mongoose.connect(url_db, {
+mongoose.connect(url_db_local, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
