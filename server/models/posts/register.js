@@ -12,7 +12,7 @@ const Register = (app) => {
 
          if (keyme == "next") {
             const hashpwd = await bcrypt.hashSync(pwd,10);
-            const Account = new UserModel({name,email,pwd:hashpwd,ranks: {vip: 0 , admin : 0 , demo : 1}});
+            const Account = new UserModel({name,email,pwd:hashpwd, avatar : "demo.png" , ranks: {vip: 0 , admin : 0 , demo : 1}});
             await Account.save();
 
             
@@ -21,6 +21,7 @@ const Register = (app) => {
                
                email : email,
                name : name,
+               avatar : "demo.png",
                ranks: {vip: 0 , admin : 0 , demo : 1}
                
             };
