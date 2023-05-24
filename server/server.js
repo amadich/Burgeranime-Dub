@@ -13,6 +13,7 @@ const anime = require("./models/posts/anime.js");
 const getanimes = require("./models/gets/getanimes.js");
 const getseries = require("./models/gets/getseries.js");
 const addeps = require("./models/posts/addeps.js");
+const geteps = require("./models/gets/geteps.js");
 
 app.use(express.json());
 app.use(cors());
@@ -22,6 +23,7 @@ app.use(express.static("public"));
 
 getanimes(app);
 getseries(app);
+geteps(app);
 // posts
 // Animes
 uploadanimeimg(app);
