@@ -23,8 +23,11 @@ The new version of the anime burger site 🍔 , The site gets a new software pow
 ![image](https://github.com/amadich/BURGERANIME/assets/74735976/57f2acca-de0e-48f9-b9a7-8dda74319722)
 
 # Routing Page (Series) 
-![image](https://github.com/amadich/BURGERANIME/assets/74735976/6157352b-25ae-41ee-baa4-53160ac9b32b)
-![image](https://github.com/amadich/BURGERANIME/assets/74735976/1af7fb42-899f-4989-9154-79dc2ebf8466)
+
+![image](https://github.com/amadich/BURGERANIME/assets/74735976/25c676dc-26aa-4f3b-b86e-b92d14eb7863)
+
+# Receive serials from using the API
+![image](https://github.com/amadich/BURGERANIME/assets/74735976/f622e796-38d4-4ea4-9a57-0e0abbcd80a9)
 
 
 ```cmd
