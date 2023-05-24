@@ -59,7 +59,7 @@ const addeps = (app) => {
             const anime = await Anime.findOne({ title });
         
             if (!anime) {
-              return res.status(404).json({ error: 'Anime not found' });
+              return res.status(404).json({ error: 'Anime not found' , ok:0 });
             }
         
             // Create the episode object
@@ -81,10 +81,10 @@ const addeps = (app) => {
             // Save the updated anime
             await anime.save();
         
-            res.json({ episode, message: 'Episode added successfully' });
+            res.json({ episode, message: 'Episode added successfully' , ok : 1 });
           } catch (error) {
             // Handle the error as needed
-            res.status(500).json({ error: 'Internal server error' });
+            res.status(500).json({ error: 'Internal server error' , ok : 0 });
           }
     });
   
