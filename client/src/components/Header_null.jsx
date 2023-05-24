@@ -4,7 +4,7 @@ function Header_null() {
    
    return ( 
       <header className='fixed w-full z-10 '>
-         <div className="navbar bg-base-100 bg-[#46393969]">
+         <div className="navbar  bg-[#46393969]">
                <div className="navbar-start">
                   <div className="dropdown">
                      <label tabIndex={0} className="btn btn-ghost lg:hidden">

@@ -1,7 +1,7 @@
 import LOGO from '../../public/burgeranime.png'
 function Footer() {
    return ( 
-      <footer className="footer p-10 bg-base-200 text-base-content bg-[#25212179] text-white">
+      <footer className="footer p-10  text-base-content bg-[#25212179] text-white">
             <div>
                <img src={LOGO} alt="Logo Burger-Anime"  width={80}/>
                <p>ACME Industries Ltd.<br/>Copyright © 2022 - 2023 <span className='font-bold'>Burger Anime®</span>. All rights reserved.</p>

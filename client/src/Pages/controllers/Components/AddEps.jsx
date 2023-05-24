@@ -47,8 +47,35 @@ function AddEps() {
     formData.append('epsurl', episodeUrl);
 
     Axios.post('http://localhost:3001/addeps', formData)
-      .then((res) => {
-        console.log(res.data);
+      .then((response) => {
+        console.log(response.data);
+        
+
+        if (response.data.ok == 1) {
+                document.getElementById("alertsucciffule").style.transform = "translateY(0px)";
+                document.getElementById("alertsucciffule").style.display = "block";
+
+                document.getElementById("alerterror").style.transform = "translateY(-100px)";
+                document.getElementById("alerterror").style.display = "none";
+
+                document.getElementById("mssgsuff").innerHTML = response.data.message;
+
+                setTimeout(() => {
+                    window.location.href = "/Profile/Console";
+                }, 1000);
+
+
+          }
+          else {
+                document.getElementById("alertsucciffule").style.transform = "translateY(-100px)";
+                document.getElementById("alertsucciffule").style.display = "none";
+
+                document.getElementById("alerterror").style.transform = "translateY(0px)";
+                document.getElementById("alerterror").style.display = "block";
+                document.getElementById("mssgderror").innerHTML = response.data.message;
+          }
+
+
         // Handle the response as needed
       })
       .catch((err) => {
@@ -60,6 +87,29 @@ function AddEps() {
   return (
     <>
       <article className="mt-20 absolute w-full h-full text-center">
+        
+        
+      <div id="alertsucciffule" className="duration-300 hidden" style={{transform: "translateY(-100px)"}}>
+                              <div className="alert alert-success shadow-lg">
+                              <div>
+                              <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                              <span id="mssgsuff" >Your Anime has been confirmed!</span>
+                              </div>
+                              </div>
+                        </div>
+
+                        <div id="alerterror" className=" duration-300 hidden" style={{transform: "translateY(-100px)"}}>
+
+                              <div className="alert alert-error shadow-lg">
+                              <div>
+                              <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                              <span id="mssgderror">Error! Task failed successfully.</span>
+                              </div>
+                              </div>
+
+      </div>
+        
+        
         <h1 className="text-center text-xl text-yellow-400 bg-yellow-500/20 rounded-lg m-5 p-5">
           ADD EPISODES?
         </h1>
