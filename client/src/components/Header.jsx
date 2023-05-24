@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
 import LOGO from '../../public/burgeranime.png';
-import Avatar from '../../public/assets/avatar.png';
+
 import {useCookies} from 'react-cookie';
 function Header({ user }) {
    const [cookie,setCookie] = useCookies(['acc_tokens']);
    const storedUser = user; //JSON.parse(window.localStorage.getItem("User"));
-   
+   const Avatar = `http://localhost:3001/catalog/uploads/avatars/${user.avatar}?${Date.now()}`;
+
+      
    const removeStorageCookie = () => {
       
       setCookie("acc_tokens" , "");

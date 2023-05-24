@@ -1,7 +1,7 @@
 import { useParams , Link } from 'react-router-dom';
 import Axios from 'axios';
 import { useEffect, useState } from 'react';
-
+import Footer from "../components/Footer";
 const Series = () => {
   const { id } = useParams();
   const [serie, setSerie] = useState({});
@@ -30,7 +30,7 @@ const Series = () => {
   return (
     <>
       <div className='flex justify-center'>
-        <article className='mt-16 absolute w-full h-full block m-auto items-center'>
+        <article className='mt-16  w-full h-full block m-auto items-center'>
           <div
             className='w-full h-80 m-auto bg-blur bg-cover bg-center backdrop-filter: blur(8px); bg-no-repeat'
             style={{
@@ -89,8 +89,15 @@ const Series = () => {
               }}
             ></div>
           </div>
+          
         </article>
+
+
+       
+      
+        
       </div>
+      <Footer />
     </>
   );
 };
