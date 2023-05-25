@@ -43,7 +43,7 @@ function Article() {
                            animes.map((anime) => {
                               return(
                                  <Link to={`/series/${anime._id}`} key={anime._id}>
-                                    <div className='w-40 h-72 pt-5 duration-300 hover:bg-[#f0f7ff21] cursor-pointer ' >
+                                    <div className='w-40 h-76 pt-1 duration-300 hover:bg-[#f0f7ff21] cursor-pointer ' >
                                        <div className='m-1  h-48 bg-cover' style={{backgroundImage : `url(http://localhost:3001/catalog/uploads/${anime.img1})`}}></div>
                                        <div className='m-1 '>
                                           <h4>{anime.title}</h4>

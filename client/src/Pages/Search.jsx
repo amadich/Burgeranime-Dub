@@ -46,9 +46,9 @@ function Search() {
           </button>
         </div>
 
-        <div className="mt-8 xl:inline-flex">
+        <div className="mt-8 ">
           {searchResults.map(anime => (
-            <Link to={`/series/${anime._id}`}  key={anime._id}><div className="bg-[#222] border rounded-lg shadow-md p-4 mb-4">
+            <Link to={`/series/${anime._id}`}  key={anime._id}><div className="bg-[#222]  border-l rounded-lg shadow-md p-4 mb-4">
               <div className="flex items-center">
                 <img
                   src={"http://localhost:3001/catalog/uploads/"+anime.img1}

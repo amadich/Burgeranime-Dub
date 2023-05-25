@@ -9,6 +9,8 @@ const Series = () => {
   const [ok, setOk] = useState(0);
   const [ok1, setOk1] = useState(0);
 
+  
+
   useEffect(() => {
     Axios.get(`http://localhost:3001/getseries?serieID=${id}`)
       .then((res) => {
@@ -53,29 +55,43 @@ const Series = () => {
               </div>
 
               <div>
-                <p className='font-bold text-xl p-5'>Session 1 : {serie && serie.title}</p>
+                <p className='font-bold text-xl p-5'>Sessions : {serie && serie.title}</p>
               </div>
               
-              {eps.length <= 1 
-              ? 
-                   ( <p>No Episodes Available</p>) 
-                    : 
-                    (
-                          Object.keys(eps).slice(1).map((key) => (
-                          <Link to={`/watch/${id}/${eps[key]._id}`}  key={eps[key]._id} className='  inline-flex m-5'>
-                          <div className='w-[17em] h-[12em]  bg-slate-100 '>
-                            <div className='w-full h-[10em]  bg-cover bg-center' 
-                            style={{background : `url(http://localhost:3001/catalog/uploads/eps/${eps[key].epsimage})` , backgroundSize: "cover" , backgroundPosition : "center"}}>
-                              <div className='w-full h-full duration-300 hover:bg-opacity-50 hover:bg-black'></div>
+              {eps.length <= 1 ? (
+                  <p>No Episodes Available</p>
+                ) : (
+                  eps
+                    .filter((episode) => episode && episode.nbrps && episode.epsimage) // Filter out null episodes and episodes without required properties
+                    .sort((a, b) => a.nbrps - b.nbrps)
+                    .slice(1) // Sort episodes by episode number in ascending order
+                    .map((episode) => {
+                      if (!episode) return null; // Skip null episodes
+
+                      const { nbrps, title, epsimage, _id } = episode;
+                      return (
+                        <Link to={`/watch/${id}/${_id}`} key={_id} className="inline-flex m-5">
+                          <div className="w-[17em] h-[12em] bg-slate-100">
+                            <div
+                              className="w-full h-[10em] bg-cover bg-center"
+                              style={{
+                                background: `url(http://localhost:3001/catalog/uploads/eps/${epsimage})`,
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                              }}
+                            >
+                              <div className="w-full h-full duration-300 hover:bg-opacity-50 hover:bg-black"></div>
                             </div>
-                            <div className='w-full h-[2em]  text-center text-black font-bold'>
-                               {eps[key].nbrps} - <span className='text-xs'>{eps[key].title}</span>
+                            <div className="w-full h-[2em] text-center text-black font-bold">
+                                  {nbrps} - <span className="text-xs">{title.length > 25 ? `${title.slice(0, 25)}...` : title}</span>
                             </div>
-                          </div> 
-                          </Link>
-                          ))
-                    )
-              }
+
+                          </div>
+                        </Link>
+                      );
+                    })
+              )}
+
 
             </div>
 

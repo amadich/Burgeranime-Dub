@@ -21,6 +21,7 @@ function Uploadanime() {
 
       const handleSubmit = (e) => {
       e.preventDefault();
+      document.getElementById("uploadanime").style.display = "none";
       const formData = new FormData();
       formData.append('file1', file1);
       formData.append('file2', file2);
@@ -118,7 +119,7 @@ function Uploadanime() {
                                     </div>
 
                                     <div className="flex justify-around mt-10">
-                                    <input className="input bg-green-500 text-black cursor-pointer btn hover:bg-green-500/70" type="submit" value="Upload Anime" />
+                                    <input className="input bg-green-500 text-black cursor-pointer btn hover:bg-green-500/70" type="submit" id="uploadanime" value="Upload Anime" />
                                     <input className="input bg-red-600 text-black cursor-pointer btn hover:bg-red-500/70" type="reset" />
                                     </div>
 

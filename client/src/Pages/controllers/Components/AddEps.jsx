@@ -34,7 +34,7 @@ function AddEps() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    document.getElementById("shareinput").style.display = "none";
     if (!selectedAnime || !episodeNumber || !episodeImage || !episodeUrl) {
       console.log('Please fill in all the required fields.');
       return;
@@ -177,6 +177,7 @@ function AddEps() {
             </label>
 
             <input
+            id="shareinput"
               type="submit"
               className="btn mt-10 bg-yellow-500 text-black hover:bg-green-600"
               value="Share Episode"
