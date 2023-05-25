@@ -12,6 +12,9 @@ The new version of the anime burger site 🍔 , The site gets a new software pow
 # Login ( Responsive )
 ![image](https://github.com/amadich/BURGERANIME/assets/74735976/a396a554-60ec-475d-a616-38b92bc78855)
 
+# New MASTER SEARCH 
+![image](https://github.com/amadich/BURGERANIME/assets/74735976/dc0a4be6-8d32-417f-87b3-08d85be52949)
+
 
 # Console For Users (Admins)
 ![image](https://github.com/amadich/BURGERANIME/assets/74735976/843a0b0b-064a-4ee5-b8de-a71266aa0ce3)
