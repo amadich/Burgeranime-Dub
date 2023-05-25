@@ -2,6 +2,8 @@
 The new version of the anime burger site 🍔 , The site gets a new software power. The site was developed using the Mern. Ease of movement between pages and less page loading. Account protection, unlike php 5, has been canceled.
 ### 
 ![image](https://github.com/amadich/BURGERANIME/assets/74735976/dadfa270-542b-4a1e-83e1-0a0d03966e31)
+#
+![image](https://github.com/amadich/BURGERANIME/assets/74735976/190cbaf9-ddaf-41aa-a8aa-8c2cc996eda2)
 
 # New Register Page  ( Strong protection unlike php)
 
