@@ -16,6 +16,7 @@ import { useEffect, useState } from 'react';
 import Header_null from './components/Header_null';
 import Watch from './Pages/Watch';
 import ScrollToTopOnNavigate from './components/ScrollToTopOnNavigate';
+import Search from './Pages/Search';
 
 function App() {
   const [cookie, setCookie] = useCookies(['acc_tokens']);
@@ -61,6 +62,7 @@ function App() {
           {rank == 1 ? <Route path="/Profile/Console/AddEps" element={<AddEps />} /> : null}
           <Route path="/series/:id" element={<Series />} />
           <Route path="/watch/:id/:epsID" element={<Watch />} />
+          <Route path='/search' element={<Search />} />
         </Routes>
         
       </Router>

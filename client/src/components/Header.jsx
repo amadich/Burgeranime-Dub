@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import LOGO from '../../public/burgeranime.png';
-
+import Transparency from '../../public/assets/transparency.png';
 import {useCookies} from 'react-cookie';
 function Header({ user }) {
    const [cookie,setCookie] = useCookies(['acc_tokens']);
@@ -47,6 +47,10 @@ function Header({ user }) {
                   <Link to="/" className="btn btn-ghost normal-case text-xl">
                      <img src={LOGO} alt="Logo Burger Anime"  width={50}/>
                   </Link>
+                  <Link to="/search" className="btn btn-ghost normal-case text-xl">
+                     <img src={Transparency} alt="Logo Burger Anime"  width={30}/>
+                  </Link>
+                  
                </div>
                <div className="navbar-center hidden lg:flex">
                   <ul className="menu menu-horizontal px-1">
