@@ -26,6 +26,8 @@ The new version of the anime burger site 🍔 , The site gets a new software pow
 
 # Profile User (Under dev )
 ![image](https://github.com/amadich/BURGERANIME/assets/74735976/57f2acca-de0e-48f9-b9a7-8dda74319722)
+# ARTICLE
+![image](https://github.com/amadich/BURGERANIME/assets/74735976/85191d35-1acf-437c-9bd4-f3b147075739)
 
 # Routing Page (Series) 
 
