@@ -12,7 +12,7 @@ const Series = () => {
   
 
   useEffect(() => {
-    Axios.get(`http://localhost:3001/getseries?serieID=${id}`)
+    Axios.get(`https://burgeranimeserver.vercel.app/getseries?serieID=${id}`)
       .then((res) => {
         const { anime } = res.data;
         setSerie(anime);
@@ -36,7 +36,7 @@ const Series = () => {
           <div
             className='w-full h-80 m-auto bg-blur bg-cover bg-center backdrop-filter: blur(8px); bg-no-repeat'
             style={{
-              backgroundImage: `url(http://localhost:3001/catalog/uploads/${
+              backgroundImage: `url(https://burgeranimeserver.vercel.app/catalog/uploads/${
                 !serie ? '1683653385343-999858805.png' : serie.img2
               })`,
             }}
@@ -75,7 +75,7 @@ const Series = () => {
                             <div
                               className="w-full h-[10em] bg-cover bg-center"
                               style={{
-                                background: `url(http://localhost:3001/catalog/uploads/eps/${epsimage})`,
+                                background: `url(https://burgeranimeserver.vercel.app/catalog/uploads/eps/${epsimage})`,
                                 backgroundSize: "cover",
                                 backgroundPosition: "center",
                               }}
@@ -98,7 +98,7 @@ const Series = () => {
             <div
               className=' float-right w-96 h-60 bg-cover bg-center m-10'
               style={{
-                backgroundImage: `url(http://localhost:3001/catalog/uploads/${
+                backgroundImage: `url(https://burgeranimeserver.vercel.app/catalog/uploads/${
                   !serie ? '1683653385343-999858805.png' : (serie.eps && serie.eps.length !== 1 ? "/eps/" + serie.eps[1].epsimage : serie.img1)
 
                 })`,

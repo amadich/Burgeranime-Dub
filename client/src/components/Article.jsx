@@ -7,7 +7,7 @@ function Article() {
    const [animes, setAnimes] = useState([]);
 
    useEffect(() => {
-      Axios.get("http://localhost:3001/getanimes")
+      Axios.get("https://burgeranimeserver.vercel.app/getanimes")
         .then((res) => {
           setAnimes(res.data.mycatalog); // Assuming `catalog` is the property containing the array
         })
@@ -44,7 +44,7 @@ function Article() {
                               return(
                                  <Link to={`/series/${anime._id}`} key={anime._id}>
                                     <div className='w-40 h-76 pt-1 duration-300 hover:bg-[#f0f7ff21] cursor-pointer ' >
-                                       <div className='m-1  h-48 bg-cover' style={{backgroundImage : `url(http://localhost:3001/catalog/uploads/${anime.img1})`}}></div>
+                                       <div className='m-1  h-48 bg-cover' style={{backgroundImage : `url(https://burgeranimeserver.vercel.app/catalog/uploads/${anime.img1})`}}></div>
                                        <div className='m-1 '>
                                           <h4>{anime.title}</h4>
                                           <p><span className='text-cyan-500'>Series</span> ♠ Sub | Dub</p>

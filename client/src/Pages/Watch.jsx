@@ -8,7 +8,7 @@ function Watch() {
    const [eps,setEps] = useState(null);
    const [anime,setAnime] = useState({});
   useEffect(() => {
-    Axios.get(`http://localhost:3001/geteps?serieID=${id}&epsID=${epsID}`)
+    Axios.get(`https://burgeranimeserver.vercel.app/geteps?serieID=${id}&epsID=${epsID}`)
       .then((res) => {
         console.log(res.data);
         setEps(res.data.episode);

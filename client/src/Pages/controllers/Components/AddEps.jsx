@@ -9,7 +9,7 @@ function AddEps() {
   const [episodeImage, setEpisodeImage] = useState(null);
 
   useEffect(() => {
-    Axios.get("http://localhost:3001/getanimes")
+    Axios.get("https://burgeranimeserver.vercel.app/getanimes")
       .then((res) => {
         console.log(res.data.mycatalog);
         setMyanime(res.data.mycatalog);
@@ -46,7 +46,7 @@ function AddEps() {
     formData.append('nbeps', episodeNumber);
     formData.append('epsurl', episodeUrl);
 
-    Axios.post('http://localhost:3001/addeps', formData)
+    Axios.post('https://burgeranimeserver.vercel.app/addeps', formData)
       .then((response) => {
         console.log(response.data);
         

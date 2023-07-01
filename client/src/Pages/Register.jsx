@@ -15,7 +15,7 @@ function Register() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const serverURL = 'http://localhost:3001';
+    const serverURL = 'https://burgeranimeserver.vercel.app';
 
     // Validate email format
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

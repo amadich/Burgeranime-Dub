@@ -5,7 +5,7 @@ import {useCookies} from 'react-cookie';
 function Header({ user }) {
    const [cookie,setCookie] = useCookies(['acc_tokens']);
    const storedUser = user; //JSON.parse(window.localStorage.getItem("User"));
-   const Avatar = `http://localhost:3001/catalog/uploads/avatars/${user.avatar}?${Date.now()}`;
+   const Avatar = `https://burgeranimeserver.vercel.app/catalog/uploads/avatars/${user.avatar}?${Date.now()}`;
 
       
    const removeStorageCookie = () => {

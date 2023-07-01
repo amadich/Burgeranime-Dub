@@ -22,7 +22,7 @@ function Profile_setting() {
 
       formData.append('email', email);
 
-      Axios.post('http://localhost:3001/changeavatar', formData, {
+      Axios.post('https://burgeranimeserver.vercel.app/changeavatar', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

@@ -25,7 +25,7 @@ function Uploadanime() {
       const formData = new FormData();
       formData.append('file1', file1);
       formData.append('file2', file2);
-      Axios.post('http://localhost:3001/uploadanimeimg', formData, {
+      Axios.post('https://burgeranimeserver.vercel.app/uploadanimeimg', formData, {
             headers: {
             'Content-Type': 'multipart/form-data'
             }
@@ -37,7 +37,7 @@ function Uploadanime() {
                   
                   console.log(res)
 
-                  Axios.post("http://localhost:3001/createanime", {title,disc,img1,img2})
+                  Axios.post("https://burgeranimeserver.vercel.app/createanime", {title,disc,img1,img2})
                   .then((response) => {
                         
 
