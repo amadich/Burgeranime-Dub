@@ -18,7 +18,7 @@ const Login = (app) => {
         return res.json({ message: 'Incorrect email or password', ok: 0 });
       }
 
-      const token = jwt.sign({ User : user, ok: 1 }, 'shhh');
+      const token = jwt.sign({ User : user, ok: 1 }, '),.~~M489q[m8dXY$Ud}5555eG%@2)#p*M55555');
 
       const decoded = jwt.verify(token, 'shhh');
       console.log(decoded);
