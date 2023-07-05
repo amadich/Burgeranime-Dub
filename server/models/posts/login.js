@@ -20,9 +20,7 @@ const Login = (app) => {
 
       const token = jwt.sign({ User : user, ok: 1 }, '),.~~M489q[m8dXY$Ud}5555eG%@2)#p*M55555');
 
-      const decoded = jwt.verify(token, 'shhh');
-      console.log(decoded);
-
+      
       res.json({ token, user, ok: 1 });
     } catch (error) {
       console.log('Error in Signin Post', error);
