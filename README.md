@@ -43,7 +43,7 @@ Like :  https://localhost/series/645bb24bba59f64ad52f5205
 ```
 # Create Firebase Option
 ```js
-npm add firebase 
+npm add firebase uuid
 ```
 
 ###
