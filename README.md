@@ -42,6 +42,10 @@ Like :  https://localhost/series/645bb24bba59f64ad52f5205
  Routes With ID SERIES (" 645bb24bba59f64ad52f5205 ")
 ```
 
+Add UUID ( function v4 ) 
+``
+npm i uuid
+```
 
 ###
 The site is still under development, it still needs a lot of additions, such as adding episodes, fixing a profile page, and good additions such as adding a favorites list, manga, and much more, unlike the php version
