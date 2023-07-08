@@ -41,7 +41,7 @@ The new version of the anime burger site 🍔 , The site gets a new software pow
 Like :  https://localhost/series/645bb24bba59f64ad52f5205
  Routes With ID SERIES (" 645bb24bba59f64ad52f5205 ")
 ```
-# Create Firebase Option
+# Create Firebase Option With UUID
 ```js
 npm add firebase uuid
 ```
