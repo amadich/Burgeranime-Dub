@@ -41,7 +41,7 @@ The new version of the anime burger site 🍔 , The site gets a new software pow
 Like :  https://localhost/series/645bb24bba59f64ad52f5205
  Routes With ID SERIES (" 645bb24bba59f64ad52f5205 ")
 ```
-
+Version NextJS TypeScript
 
 ###
 The site is still under development, it still needs a lot of additions, such as adding episodes, fixing a profile page, and good additions such as adding a favorites list, manga, and much more, unlike the php version
